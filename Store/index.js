@@ -22,6 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 
 //Routes
+app.get('/',(req,res)=>{
+    res.send('store')
+})
 app.use('/stores', storeRoute)
 
 //Invalid route
