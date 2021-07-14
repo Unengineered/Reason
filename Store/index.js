@@ -1,9 +1,9 @@
 const express = require('express');
 const morgan = require('morgan')
 const httpError = require('http-errors');
-require('./helpers/redis.helper')
 require('dotenv').config();
 const cors = require('cors')
+const fs = require('fs')
 
 const storeRoute = require('./routes/store.route')
 

@@ -2,7 +2,7 @@ const httpError = require('http-errors')
 const sqlClient = require('../configs/mysql.config')
 
 module.exports = {
-    features: async (req, res, next) => {
+    featured: async (req, res, next) => {
         try {
 
             const fetchStoresSQL = ''
