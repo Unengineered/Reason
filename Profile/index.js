@@ -1,9 +1,9 @@
 const express = require('express');
 const morgan = require('morgan')
 const httpError = require('http-errors');
-require('./helpers/redis.helper')
 require('dotenv').config();
 const cors = require('cors')
+const fs = require('fs')
 
 const profileRoute = require('./routes/profile.route')
 
@@ -22,6 +22,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 
 //Routes
+app.get('/',(req,res)=>{
+    res.send('profile')
+})
 app.use('/profile', profileRoute)
 
 //Invalid route

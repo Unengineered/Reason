@@ -1,5 +1,5 @@
 const httpError = require('http-errors')
-var dynamoClient = require('../config/dynamodb.config')
+var dynamoClient = require('../configs/dynamodb.config')
 
 module.exports = {
     profile: async (req, res, next) => {
