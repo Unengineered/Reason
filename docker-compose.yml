@@ -1,0 +1,46 @@
+version: '3'
+
+services:
+    featured:
+        build: ./Featured  
+        ports: 
+            - "4000:8080" 
+        networks:
+            - web
+        restart: always
+
+    features:
+        build: ./Features
+        ports: 
+            - "4001:8080"
+        networks: 
+            - web
+        restart: always
+
+    profile:
+        build: ./Profile
+        networks: 
+            - web
+        restart: always
+
+    store:
+        build: ./Store
+        networks: 
+            - web
+        restart: always
+    
+    nginx:
+        image: nginx
+        ports:
+            - "8080:8080"
+        volumes:
+            - ./Nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+            - ./Nginx/certs:/etc/ssl/certs
+        networks:
+            - web
+        restart: always
+        
+networks:
+    web:
+        driver: bridge
+    
