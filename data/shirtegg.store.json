@@ -1,0 +1,78 @@
+{
+    "name": "Shirtegg",
+    "logo": "String",
+    "featured_picture" : "String",
+    "featured_product" : "String",
+    "sections": [
+        {
+            "name": "The Big bang",
+            "type": "quick_select",
+            "products": [
+                {
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },
+                {
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },
+                {
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                }
+            ]
+        },
+        {
+            "name": "Among Us merch",
+            "type": "quick_select",
+            "products": [
+                {
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },{
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },{
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },{
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                }
+            ]
+        },
+        {
+            "name": "Valorant",
+            "type": "quick_select",
+            "products": [
+                {
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },{
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                },
+                {
+                    "picture" : "String",
+                    "product_id" : "String",
+                    "background": "String"
+                }
+            ]
+        }
+
+    ],
+    "about": "A Small Venture Started By Two Determined College Students, Curating And Creating Some Exclusive Designs For Tees! How Many Times Have You Walked In A Room Full Of People Wearing T-Shirts Of The Same Design? Well, Not Anymore!",
+    "socials": {
+        "instagram" : "https://www.instagram.com/shirtegg.in/",
+        "facebook": "https://www.facebook.com/shirtegg.in/"
+    }
+}

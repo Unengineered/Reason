@@ -32,4 +32,4 @@ const StoreSchema = new Schema({
     },
 });
 
-module.exports = Order = mongoose.model("stores", StoreSchema);
+module.exports = Store = mongoose.model("stores", StoreSchema);
