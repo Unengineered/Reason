@@ -5,6 +5,8 @@ require('dotenv').config();
 const cors = require('cors')
 const fs = require('fs')
 
+require('./configs/mogodb.config')
+
 const storeRoute = require('./routes/store.route')
 
 const port = process.env.PORT || 8080
@@ -25,7 +27,7 @@ app.use(cors())
 app.get('/',(req,res)=>{
     res.send('store')
 })
-app.use('/stores', storeRoute)
+app.use('/store', storeRoute)
 
 //Invalid route
 app.use(async (req, res, next) => {

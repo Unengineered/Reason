@@ -1,43 +1,31 @@
 const httpError = require('http-errors')
-var dynamoClient = require('../configs/dynamodb.config')
 var sqlClient = require('../configs/mysql.config')
+var { storeSchema } = require('../helpers/validation_schema')
+var Store = require('../models/store.model')
 
 module.exports = {
     store: async (req, res, next) => {
         try {
 
-            const sid = req.body.sid
-            const params = {
-                TableName: 'stores',
-                Key: {
-                    'sid': sid
-                }
-            }
-            // get store profile
-            dynamoClient.get(params, async (err, userInfo) => {
-                try {
-                    if (err) {
-                        console.log("Dynamo Error: " + err)
-                        throw httpError.ServiceUnavailable("DynamoDB error: " + error)
-                    } else {
-                        console.log('Success', storeInfo)
-                        res.send(storeInfo)
-                    }
+            const store_id = req.body.store_id
 
-                } catch (error) {
-                    next(error)
-                }
-            })
+            if(!store_id)
+                throw httpError.BadRequest('store_id is required')
+        
+            const store = await Store.findById(store_id)
+            console.log(store)
+            res.send(store)
+            
 
         } catch (error) {
             next(error)
         }
     },
 
-    stores: async (req, res, next) => {
+    allStores: async (req, res, next) => {
         try {
 
-            const fetchStoresSQL = ''
+            const fetchStoresSQL = 'SELECT * FROM stores'
             // get stores list
             sqlClient.query(fetchStoresSQL, function (error, results, fields) {
 
@@ -55,5 +43,39 @@ module.exports = {
         } catch (error) {
             next(error)
         }
+    },
+    addStore: async (req, res, next) => {
+
+        try {
+
+            const result = await storeSchema.validateAsync(req.body)
+
+            const store = await Store(result)
+            const savedStore = await store.save()
+
+            const addStoreSQL = `INSERT INTO Stores(store_id, name, picture) VALUES('${savedStore._id}','${savedStore.name}}', '${savedStore.featured_picture}');`
+            // save to mysql
+            sqlClient.query(addStoreSQL, function (error, results, fields) {
+
+                try {
+                    if (error)
+                        throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                    console.log(results)
+                    res.send(savedStore)
+
+                } catch (error) {
+                    next(error)
+                }
+
+            })
+
+
+
+
+        } catch (error) {
+            if (error.isJoi === true) error.status = 422
+            next(error)
+        }
+
     }
 }
