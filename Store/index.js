@@ -5,10 +5,11 @@ require('dotenv').config();
 const cors = require('cors')
 const fs = require('fs')
 
+//database configurations
+require('./configs/mysql.config')
 require('./configs/mogodb.config')
 
 const storeRoute = require('./routes/store.route')
-
 const port = process.env.PORT || 8080
 
 const app = express()

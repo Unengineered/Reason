@@ -1,5 +1,6 @@
 [
     {
+        "store": "Shirtegg",
         "name": "ANYTHING CAN HAPPEN THURSDAY",
         "pictures": [
             {
@@ -35,6 +36,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "THE BIG BANG THEORY T-SHIRT",
         "pictures": [
             {
@@ -63,7 +65,8 @@
         },
         "material": "cotton"
     },
-    {
+    {   
+        "store": "Shirtegg",
         "name": "NEVER SIT IN MY SPOT",
         "pictures": [
             {
@@ -99,6 +102,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "AMONG US X FRIENDS T-SHIRT",
         "pictures": [
             {
@@ -145,6 +149,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "AMONG US X FINDING NEMO T-SHIRT",
         "pictures": [
             {
@@ -186,6 +191,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "AMONG US BASIC T-SHIRT WOMEN",
         "pictures": [
             
@@ -238,6 +244,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "AMONG US BASIC T-SHIRT MEN",
         "pictures": [
             {
@@ -289,6 +296,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "BRIMSTONE – VALORANT T-SHIRT",
         "pictures": [
             {
@@ -324,6 +332,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "OMEN – VALORANT T-SHIRT",
         "pictures": [
             {
@@ -359,6 +368,7 @@
         "material": "cotton"
     },
     {
+        "store": "Shirtegg",
         "name": "REYNA – VALORANT T-SHIRT",
         "pictures": [
             {

@@ -1,34 +1,36 @@
 require('dotenv').config()
 
 // Set up mysql /
-var mysql = require('mysql');
-var mysqlConnection = mysql.createConnection({
-	host: process.env.MYSQL_HOST,
-	port: process.env.MYSQL_PORT,
-	user: process.env.MY_SQL_USER,
-	password: process.env.MYSQL_PASSWORD,
-	database: process.env.MYSQL_DATABASE
-});
+var mysql = require('mysql2');
 
-// var pool = createPool({
-// 	host: "localhost",
-//     user: "root",
-//     password: "root",
-//     database: "stores",
-//     connectionLimit: 10
-// })
-
-// pool.query(`select * from registration`, function(err, result, fields) {
-//     if (err) {
-//         return console.log(err);
-//     }
-//     return console.log(result);
-// })
+const mysqlConfig = {
+	host: process.env.MYSQL_HOST || 'localhost',
+	user: process.env.MYSQL_USER || 'root',
+	password: process.env.MYSQL_PASSWORD || 'root',
+	database: process.env.MYSQL_DATABASE || 'everything',
+    port: process.env.MYSQL_PORT || '3307'
+}
+var mysqlConnection = mysql.createConnection(mysqlConfig);
 
 mysqlConnection.connect((err) => {
 	if (err)
-		console.log(err)
-	console.log('connected to mysql')
+		throw err
+	else
+		console.log('connected to mysql')
 });
 
+var addTableSQL = 'CREATE TABLE IF NOT EXISTS stores( store_id VARCHAR(500) PRIMARY KEY, name VARCHAR(200) NOT NULL, picture VARCHAR(500));'
+mysqlConnection.query(addTableSQL, function (error, results, fields) {
+
+    try {
+        if (error)
+            throw error
+        console.log(results)
+
+    } catch (error) {
+        console.log(error)
+        throw error
+    }
+
+})
 module.exports = mysqlConnection

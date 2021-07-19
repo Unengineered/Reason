@@ -8,7 +8,7 @@ var mongoConnect = mongoose
     useFindAndModify: false,
     useCreateIndex: true,
   },() => {
-    console.log(`Order-Service DB Connected`);
+    console.log(`Store-Service DB Connected`);
 })
   
 

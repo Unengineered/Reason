@@ -53,7 +53,7 @@ module.exports = {
             const store = await Store(result)
             const savedStore = await store.save()
 
-            const addStoreSQL = `INSERT INTO Stores(store_id, name, picture) VALUES('${savedStore._id}','${savedStore.name}}', '${savedStore.featured_picture}');`
+            const addStoreSQL = `INSERT INTO stores(store_id, name, picture) VALUES('${savedStore._id}','${savedStore.name}}', '${savedStore.featured_picture}');`
             // save to mysql
             sqlClient.query(addStoreSQL, function (error, results, fields) {
 
@@ -68,9 +68,6 @@ module.exports = {
                 }
 
             })
-
-
-
 
         } catch (error) {
             if (error.isJoi === true) error.status = 422

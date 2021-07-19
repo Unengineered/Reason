@@ -3,8 +3,9 @@ const Schema = mongoose.Schema;
 
 const productSchema = new Schema({
 
+    store: String,
     name: String,
-    pictures : [
+    pictures: [
         Schema.Types.Mixed,
         {
             background: String,
@@ -12,13 +13,12 @@ const productSchema = new Schema({
             color: String
         }
     ],
-    sizes : [String],
+    sizes: [String],
     colors: [String],
     price: Number,
     details: String,
-    properties: [        
+    properties:
         Schema.Types.Mixed,
-    ],
     material: String,
     created_at: {
         type: Date,
