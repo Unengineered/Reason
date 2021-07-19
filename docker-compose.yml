@@ -2,8 +2,6 @@ version: '3'
 services:
     store:
         build: ./Store   
-        ports: 
-            - "4000:8080"
         restart: always
         depends_on: 
             - mysql_server
@@ -11,25 +9,22 @@ services:
         environment: 
             - MYSQL_HOST=mysql_server
             - MYSQL_PASSWORD=password
-            - MYSQL_USER=admin
+            - MYSQL_USER=root
             - MYSQL_DATABASE=everything
             - MYSQL_PORT=3306
+            - MONGODB_URI=mongodb://mongodb:27017
 
     product:
         build: ./Product   
         depends_on: 
             - mongodb
-        ports: 
-            - "4001:8080"
         restart: always
-        links:
-            - mongodb
+        environment: 
+            - MONGODB_URI=mongodb://mongodb:27017
         restart: always
 
     cart:
         build: ./Cart
-        ports: 
-            - "4002:8080"
         restart: always
 
     nginx:
@@ -50,32 +45,20 @@ services:
             - 27017:27017
         restart: unless-stopped
     
-    # mysql:
-    #     image: mysql:8.0
-    #     restart: always
-    #     environment: 
-    #         - MYSQL_DATABASE=everything
-    #         - MYSQL_USER=admin
-    #         - MYSQL_PASSWORD=password
-    #         - MYSQL_ROOT_PASSWORD=password
-        # ports: 
-        #     - 3036:3306
-        # volumes:
-        #     - mysql-db-config:/etc/mysql
-        #     - mysql-db-data:/var/lib/mysql
-        #     - ./db/backup/files/:/data_backup/data
     mysql_server:
         image: mysql:8.0
         environment: 
             - MYSQL_DATABASE=everything
-            - MYSQL_USER=admin
+            - MYSQL_USER=root
             - MYSQL_PASSWORD=password
             - MYSQL_ROOT_PASSWORD=password
+        restart: always
+        # volumes:
+        #     - mysql_data_container:/var/lib/mysql
 
 volumes:
     mongodb_data_container:
-    mysql-db-config:
-    mysql-db-data:
+    mysql_data_container:
 
 # networks:
 #   web:
