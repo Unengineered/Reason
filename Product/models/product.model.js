@@ -4,8 +4,16 @@ const Schema = mongoose.Schema;
 const productSchema = new Schema({
 
     name: String,
-    pictures : [String],
+    pictures : [
+        Schema.Types.Mixed,
+        {
+            background: String,
+            url: String,
+            color: String
+        }
+    ],
     sizes : [String],
+    colors: [String],
     price: Number,
     details: String,
     properties: [        
