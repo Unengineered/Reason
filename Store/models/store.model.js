@@ -13,7 +13,8 @@ const StoreSchema = new Schema({
             type: String,
             products: [
                 {
-                    product_name: String,
+                    name: String,
+                    price: Number,
                     picture : String,
                     product_id : String,
                     background: String
