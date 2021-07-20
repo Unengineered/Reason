@@ -20,7 +20,26 @@ module.exports = {
             next(error)
         }
     },
-    addProduct: async (req, res, next) => {
+
+    allProducts: async(req,res,next) =>{
+        try {
+
+            Product.find({}, function(err, products) {
+                var productMap = {};
+            
+                products.forEach(function(product) {
+                  productMap[product._id] = product;
+                });
+            
+                res.send(productMap);  
+              });
+
+        } catch (error) {
+            next(error)
+        }
+    },
+
+    addProducts: async (req, res, next) => {
 
         try {
             const productArray = req.body
@@ -41,6 +60,30 @@ module.exports = {
             });
 
             res.send("Products added successfully")
+
+        } catch (error) {
+            if (error.isJoi === true) error.status = 422
+            next(error)
+        }
+
+    },
+
+    deleteProducts : async (req, res, next) => {
+
+        try {
+            const productArray = req.body
+
+            await productArray.forEach(async (product) => {
+                try {
+                    await Product.findByIdAndDelete(product)
+
+                } catch (error) {
+                    throw httpError.BadRequest(error)
+                }
+
+            });
+
+            res.send("Products deleted successfully")
 
         } catch (error) {
             if (error.isJoi === true) error.status = 422
