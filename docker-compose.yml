@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
     store:
         build: ./Store   
@@ -53,9 +53,9 @@ services:
             - MYSQL_PASSWORD=password
             - MYSQL_ROOT_PASSWORD=password
         restart: always
-        # volumes:
-        #     - mysql_data_container:/var/lib/mysql
-
+        volumes:
+            - mysql_data_container:/var/lib/sql
+            
 volumes:
     mongodb_data_container:
     mysql_data_container:
