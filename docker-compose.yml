@@ -9,7 +9,7 @@ services:
         environment: 
             - MYSQL_HOST=mysql_server
             - MYSQL_PASSWORD=password
-            - MYSQL_USER=root
+            - MYSQL_USER=admin
             - MYSQL_DATABASE=everything
             - MYSQL_PORT=3306
             - MONGODB_URI=mongodb://mongodb:27017
@@ -49,7 +49,7 @@ services:
         image: mysql:8.0
         environment: 
             - MYSQL_DATABASE=everything
-            - MYSQL_USER=root
+            - MYSQL_USER=admin
             - MYSQL_PASSWORD=password
             - MYSQL_ROOT_PASSWORD=password
         restart: always
