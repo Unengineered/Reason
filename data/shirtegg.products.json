@@ -402,5 +402,41 @@
             "Print": "DTG"
         },
         "material": "cotton"
-    }
+    },
+    {
+        "store": "Shirtegg",
+        "name": "BRIMSTONE – VALORANT T-SHIRT",
+        "pictures": [
+          {
+            "background":"4A4A4A",
+            "url":  "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FDisplacement-Map_Back.png?alt=media&token=7929d575-668c-4ce2-8200-3ef6e1d9b982",
+            "color":"white"
+          },
+          {
+            "background":"4A4A4A",
+            "url":  "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FDisplacement-Map_Front__2_-removebg-preview.png?alt=media&token=801730df-d7d5-42ba-b7a6-432b24790900",
+            "color":"white"
+          }
+        ],
+        "sizes": [
+          {"unselected" : "S" , "selected" : "Small"},
+          {"unselected" : "M" , "selected" : "Medium"},
+          {"unselected" : "L" , "selected" : "Large"}
+        ],
+        "colors": [
+          {"color" : "ffffff", "name" : "white"},
+          {"color" : "ffffff", "name" : "white"}
+        ],
+        "price": 699,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+          {"property" : "Fit" , "description" : "Regular fit"},
+          {"property" : "Sleeve length" , "description" : "Half sleeves"},
+          {"property" : "Collar" , "description" : "Round neck"},
+          {"property" : "Occasion" , "description" : "Casual"},
+          {"property" : "Print" , "description" : "DTG"}
+        ],
+        "quick_info":["cotton"]
+      }
+      
 ]

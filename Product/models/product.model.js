@@ -13,13 +13,30 @@ const productSchema = new Schema({
             color: String
         }
     ],
-    sizes: [String],
-    colors: [String],
+    sizes: [        
+        Schema.Types.Mixed,
+        {
+            unselected: String,
+            selected : String
+        }
+    ],
+    colors: [
+        Schema.Types.Mixed,
+        {
+            color: String,
+            name: String
+        }
+    ],
     price: Number,
     details: String,
-    properties:
+    properties:[  
         Schema.Types.Mixed,
-    material: String,
+        {
+            property: String,
+            description: String
+        }
+    ],
+    quick_info: [String],
     created_at: {
         type: Date,
         default: Date.now(),

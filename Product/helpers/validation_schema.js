@@ -9,8 +9,8 @@ const productSchema = Joi.object({
   colors: Joi.array().required(),
   price : Joi.number().required(),
   details: Joi.string().required() , 
-  properties: Joi.required(),
-  material: Joi.string().required(),
+  properties: Joi.array().required(),
+  quick_info: Joi.array().required(),
 })
 
 module.exports = {
