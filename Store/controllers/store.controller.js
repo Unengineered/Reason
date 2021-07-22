@@ -134,4 +134,27 @@ module.exports = {
         }
     },
 
+    updateStores: async (req, res, next) => {
+        try {
+            const storeArray = req.body
+
+            await storeArray.forEach(async (store) => {
+                try {
+                    console.log(store)
+                    await Store.findByIdAndUpdate(store.id, store.updatedData)
+                
+                } catch (error) {
+                    throw httpError.BadRequest(error)
+                }
+
+            });
+
+            res.send("Store/s updated successfully")
+
+        } catch (error) {
+            if (error.isJoi === true) error.status = 422
+            next(error)
+        }
+    },
+
 }
