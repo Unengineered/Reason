@@ -75,7 +75,7 @@ module.exports = {
                 const storeObject = await Store(result)
                 const savedStore = await storeObject.save()
 
-                const addStoreSQL = `INSERT INTO stores(store_id, name, picture) VALUES('${savedStore.id}','${savedStore.name}}', '${savedStore.store_picture}');`
+                const addStoreSQL = `INSERT INTO stores(store_id, name, picture) VALUES('${savedStore.id}','${savedStore.name}', '${savedStore.store_picture}');`
                 // save to mysql
                 sqlClient.query(addStoreSQL, function (error, results, fields) {
 
