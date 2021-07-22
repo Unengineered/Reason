@@ -7,6 +7,7 @@ const StoreSchema = new Schema({
     logo: String,
     featured_picture: String,
     featured_product: String,
+    store_picture: String,
     sections: [
         Schema.Types.Mixed,
         {
