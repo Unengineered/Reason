@@ -5,6 +5,7 @@ const storeSchema = Joi.object({
   logo: Joi.string().required(),
   featured_picture: Joi.string().required(),
   featured_product: Joi.string().required(),
+  store_picture: Joi.string().required(),
   sections : Joi.array().required(),
   socials: Joi.required(),
   about: Joi.string().required(),
