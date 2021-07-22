@@ -1,77 +1,99 @@
-{
-    "name": "Shirtegg",
-    "logo": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/logos%2Fshirtegg-logo.png?alt=media&token=5de08152-c54b-4df1-a2e4-06b91d354ea9",
-    "featured_picture" : "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2Fshirtegg-reyna.png?alt=media&token=32269003-a4b8-486f-9cf7-cb415c4c94b0",
-    "featured_product" : "String",
-    "sections": [
-        {
-            "name": "The Big bang",
-            "type": "quick_select",
-            "products": [
-                {
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },
-                {
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },
-                {
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                }
-            ]
-        },
-        {
-            "name": "Among Us merch",
-            "type": "quick_select",
-            "products": [
-                {
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },{
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },{
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },{
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                }
-            ]
-        },
-        {
-            "name": "Valorant",
-            "type": "quick_select",
-            "products": [
-                {
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },{
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                },
-                {
-                    "picture" : "String",
-                    "product_id" : "String",
-                    "background": "String"
-                }
-            ]
-        }
+ [
+   {
+        "name": "Shirtegg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/logos%2Fshirtegg-logo.png?alt=media&token=5de08152-c54b-4df1-a2e4-06b91d354ea9",
+        "featured_picture" : "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2Fshirtegg-reyna.png?alt=media&token=32269003-a4b8-486f-9cf7-cb415c4c94b0",
+        "featured_product" : "String",
+        "sections": [
+            {
+                "name": "The Big bang",
+                "type": "quick_select",
+                "products": [
+                    {   
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong%20us%20X%20friends-black.png?alt=media&token=52756860-e141-4a26-87fb-24b2d34bea89",
+                        "product_id" : "String",
+                        "background": "DADADA"
+                    },
+                    {
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    },
+                    {
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    }
+                ]
+            },
+            {
+                "name": "Among Us merch",
+                "type": "quick_select",
+                "products": [
+                    {
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    },{
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    },{
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    },{
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    }
+                ]
+            },
+            {
+                "name": "Valorant",
+                "type": "quick_select",
+                "products": [
+                    {
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    },{
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    },
+                    {
+                        "name" : "Among Us merch",
+                        "price": 499,
+                        "picture" : "String",
+                        "product_id" : "String",
+                        "background": "String"
+                    }
+                ]
+            }
 
-    ],
-    "about": "A Small Venture Started By Two Determined College Students, Curating And Creating Some Exclusive Designs For Tees! How Many Times Have You Walked In A Room Full Of People Wearing T-Shirts Of The Same Design? Well, Not Anymore!",
-    "socials": {
-        "instagram" : "https://www.instagram.com/shirtegg.in/"
+        ],
+        "about": "A Small Venture Started By Two Determined College Students, Curating And Creating Some Exclusive Designs For Tees! How Many Times Have You Walked In A Room Full Of People Wearing T-Shirts Of The Same Design? Well, Not Anymore!",
+        "socials": {
+            "instagram" : "https://www.instagram.com/shirtegg.in/"
+        }
     }
-}
+]

@@ -12,10 +12,11 @@ const storeRoute = require('./routes/product.route')
 const port = process.env.PORT || 8080
 
 const app = express()
-const httpServer = require('https').createServer({
+const https = require('https').createServer({
     key: fs.readFileSync('./certificates/server.key'),
     cert: fs.readFileSync('./certificates/server.cert')
 }, app)
+const http = require('http').createServer(app)
 
 //miiddlewares
 app.use(morgan('dev'))
@@ -45,8 +46,9 @@ app.use((err, req, res, next) => {
     })
 })
 
+server = http
 //Start listening
-httpServer.listen(port, () => {
+http.listen(port, () => {
     console.log(`Server running at port ` + port);
 });
 
