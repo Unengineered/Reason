@@ -2,10 +2,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const StoreSchema = new Schema({
+
     name: String,
     logo: String,
-    featured_picture : String,
-    featured_product : String,
+    featured_picture: String,
+    featured_product: String,
     sections: [
         Schema.Types.Mixed,
         {
@@ -15,8 +16,8 @@ const StoreSchema = new Schema({
                 {
                     name: String,
                     price: Number,
-                    picture : String,
-                    product_id : String,
+                    picture: String,
+                    product_id: String,
                     background: String
                 }
             ]
@@ -25,13 +26,14 @@ const StoreSchema = new Schema({
     ],
     about: String,
     socials: {
-        instagram : String,
+        instagram: String,
         facebook: String
     },
     created_at: {
         type: Date,
         default: Date.now(),
     },
-});
+}
+);
 
 module.exports = Store = mongoose.model("stores", StoreSchema);

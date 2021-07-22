@@ -46,7 +46,9 @@ module.exports = {
             var savedProductArray = []
 
             await productArray.forEach(async (product) => {
+
                 try {
+
                     result = await productSchema.validateAsync(product)
                     product = await Product(result)
                     savedProduct = await product.save()

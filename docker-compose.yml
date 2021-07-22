@@ -23,9 +23,9 @@ services:
             - MONGODB_URI=mongodb://mongodb:27017
         restart: always
 
-    cart:
-        build: ./Cart
-        restart: always
+    # cart:
+    #     build: ./Cart
+    #     restart: always
 
     nginx:
         image: nginx

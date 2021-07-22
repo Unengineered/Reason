@@ -9,13 +9,13 @@ module.exports = {
 
             const store_id = req.body.store_id
 
-            if(!store_id)
+            if (!store_id)
                 throw httpError.BadRequest('store_id is required')
-        
+
             const store = await Store.findById(store_id)
             console.log(store)
             res.send(store)
-            
+
 
         } catch (error) {
             next(error)
@@ -48,15 +48,15 @@ module.exports = {
     allStoresMongo: async (req, res, next) => {
         try {
 
-            Store.find({}, function(err, stores) {
+            Store.find({}, function (err, stores) {
                 var storeMap = {};
-            
-                stores.forEach(function(store) {
-                  storeMap[store._id] = store;
+
+                stores.forEach(function (store) {
+                    storeMap[store._id] = store;
                 });
-            
-                res.send(storeMap);  
-              });
+
+                res.send(storeMap);
+            });
 
         } catch (error) {
             next(error)
@@ -74,17 +74,17 @@ module.exports = {
 
                 const storeObject = await Store(result)
                 const savedStore = await storeObject.save()
-    
-                const addStoreSQL = `INSERT INTO stores(store_id, name, picture) VALUES('${savedStore._id}','${savedStore.name}}', '${savedStore.featured_picture}');`
+
+                const addStoreSQL = `INSERT INTO stores(store_id, name, picture) VALUES('${savedStore.id}','${savedStore.name}}', '${savedStore.store_picture}');`
                 // save to mysql
                 sqlClient.query(addStoreSQL, function (error, results, fields) {
-    
+
                     try {
                         if (error)
                             throw httpError.ServiceUnavailable('MySQL error: ' + error)
                         console.log(results)
                         res.send(savedStore)
-    
+
                     } catch (error) {
                         next(error)
                     }
@@ -92,7 +92,7 @@ module.exports = {
                 })
             })
 
-            
+
 
         } catch (error) {
             if (error.isJoi === true) error.status = 422
@@ -113,11 +113,11 @@ module.exports = {
 
                     // delete from mysql
                     sqlClient.query(deleteStoreSQL, function (error, results, fields) {
-        
-                            if (error)
-                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
-                            console.log(results)
-                      
+
+                        if (error)
+                            throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                        console.log(results)
+
                     })
 
                 } catch (error) {
@@ -132,6 +132,6 @@ module.exports = {
             if (error.isJoi === true) error.status = 422
             next(error)
         }
-    }, 
+    },
 
 }
