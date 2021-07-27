@@ -1,0 +1,59 @@
+[
+    {
+        "id": "60fa5d60a99dd40014323022",
+        "updatedData":{
+            "name": "Mixtape",
+            "logo": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/logos%2Fmixtapes.png?alt=media&token=88fe88b6-5e9c-4a96-81a1-95de1fd1f975",
+            "featured_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2FMixtapesBetterTogether.png?alt=media&token=c386e17d-5d1a-43b4-abf5-3f9464a13b7d",
+            "featured_product": "60fa5bfcd510c60014e6e4a6",
+            "store_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/store_pictures%2Fmixtapes_store_picture.png?alt=media&token=3479f23f-eda9-448c-8e43-86ee051e6db7",
+            "sections": [
+                {
+                    "name": "Savage Tshirts",
+                    "type": "normal_product",
+                    "products": [
+                        {
+                            "name": "Your opinions dont matter",
+                            "price": 420,
+                            "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
+                            "product_id": "60fa5bfcd510c60014e6e4a3",
+                            "background": "4A4A4A"
+                        },
+                        {
+                            "name": "Feelings crop top",
+                            "price": 300,
+                            "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8",
+                            "product_id": "60fa5bfcd510c60014e6e4a4",
+                            "background": "4A4A4A"
+                        }
+                    ]
+                },
+                {
+                    "name": "Cool Tees",
+                    "type": "quick_select",
+                    "products": [
+                        {
+                            "name": "B99 Merch",
+                            "price": 420,
+                            "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fcool.png?alt=media&token=408a3084-00cb-481d-9fd8-5f91b6a84076",
+                            "product_id": "60fa5bfcd510c60014e6e4a5",
+                            "background": "7DA0FB"
+                        },
+                        {
+                            "name": "Better together Tshirt",
+                            "price": 420,
+                            "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fbetter.png?alt=media&token=80285ced-fe89-459c-8849-5015f0eb457a",
+                            "product_id": "60fa5bfcd510c60014e6e4a6",
+                            "background": "DADADA"
+                        }
+                    ]
+                }
+            ],
+            "about": "A Small Venture Started By Two Determined College Students, Curating And Creating Some Exclusive Designs For Tees! How Many Times Have You Walked In A Room Full Of People Wearings Of The Same Design? Well, Not Anymore!",
+            "socials": {
+                "instagram": "https://www.instagram.com/mixtapes.in/"
+            }
+        }
+    }
+    
+]

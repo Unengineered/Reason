@@ -1,17 +1,17 @@
 [
     {
         "store": "Shirtegg",
-        "name": "ANYTHING CAN HAPPEN THURSDAY",
+        "name": "Thursday",
         "pictures": [
             {
                 "background": "DADADA",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344",
-                "color": "black"
+                "color": "Black"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-White.png?alt=media&token=ca6ba826-0df3-483e-b306-dffac9f86b7f",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -35,11 +35,11 @@
          "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             },
             {
                 "color": "000000",
-                "name": "black"
+                "name": "Black"
             }
         ],
         "price": 549,
@@ -67,17 +67,17 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "THE BIG BANG THEORY T-SHIRT",
+        "name": "TBBT T-Shirt",
         "pictures": [
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Title-PNG-White.png?alt=media&token=90bab1f2-f9ab-4998-bfef-5a58c8099786",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -101,7 +101,7 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             }
         ],
         "price": 549,
@@ -129,22 +129,22 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "NEVER SIT IN MY SPOT",
+        "name": "My spot",
         "pictures": [
             {
                 "background": "DADADA",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Never-Sit-PNG-Black.png?alt=media&token=80309e11-99dd-4816-b226-decee8f2f377",
-                "color": "black"
+                "color": "Black"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Never-Sit-PNG-White.png?alt=media&token=528d0893-cb2c-459f-9e26-2cdd5a853989",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -168,11 +168,11 @@
          "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             },
             {
                 "color": "000000",
-                "name": "black"
+                "name": "Black"
             }
         ],
         "price": 499,
@@ -200,32 +200,32 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "AMONG US X FRIENDS T-SHIRT",
+        "name": "Among us X Friends",
         "pictures": [
             {
                 "background": "7DA0FB",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-x-Friends-PNG-Navy-Blue.png?alt=media&token=12eb1559-5ae1-49c3-a756-6cedd61ef1c3",
-                "color": "navy blue"
+                "color": "Navy Blue"
             },
             {
                 "background": "DADADA",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-us-basic-women-black%20.png?alt=media&token=934111ba-214a-4d0b-a4b2-6bbd6f71b3a5",
-                "color": "black"
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong%20us%20X%20friends-black.png?alt=media&token=52756860-e141-4a26-87fb-24b2d34bea89" ,
+                "color": "Black"
             },
             {
                 "background": "63A2ED",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-x-Friends-PNG-Royal-Blue.png?alt=media&token=0f9e0e86-03c1-48e6-9960-ba3df62fcdf4",
-                "color": "royal blue"
+                "color": "Royal Blue"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-x-Friends-PNG-White.png?alt=media&token=293da9ba-f894-4a84-8444-54a7c4dda908",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -249,15 +249,15 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             },
             {
                 "color": "000000",
-                "name": "black"
+                "name": "Black"
             },
             {
                 "color": "22234D",
-                "name": "navy blue"
+                "name": "Navy Blue"
             }
         ],
         "price": 499,
@@ -285,27 +285,27 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "AMONG US X FINDING NEMO T-SHIRT",
+        "name": "Among us X Finding nemo",
         "pictures": [
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-x-Finding-Nemo-Mockup-PNG-White.png?alt=media&token=5c44cbec-29a9-42d5-88d2-bad8eac60a8d",
-                "color": "white"
+                "color": "White"
             },
             {
                 "background": "63A2ED",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-x-Finding-Nemo-Mockup-PNG-Royal-Blue.png?alt=media&token=3dcc1c2c-a59a-4c37-b2c6-9b3cd65b62ae",
-                "color": "royal blue"
+                "color": "Royal Blue"
             },
             {
                 "background": "7DA0FB",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-x-Finding-Nemo-Mockup-PNG-Navy-Blue.png?alt=media&token=c64de1a5-5eae-43a0-b677-dc1427c2c6ac",
-                "color": "navy blue"
+                "color": "Navy Blue"
             }
         ],
         "sizes": [
@@ -329,15 +329,15 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             },
             {
                 "color": "22234D",
-                "name": "navy blue"
+                "name": "Navy Blue"
             },
             {
                 "color": "244E87",
-                "name": "royal blue"
+                "name": "Royal Blue"
             }
         ],
         "price": 499,
@@ -365,37 +365,37 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "AMONG US BASIC T-SHIRT WOMEN",
+        "name": "Amoung us - Women",
         "pictures": [
             {
                 "background": "7DA0FB",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Women-PNG-Navy-Blue.png?alt=media&token=06302818-904a-4df0-8abd-acb00c99ab00",
-                "color": "navy blue"
+                "color": "Navy Blue"
             },
             {
                 "background": "DADADA",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong%20us%20X%20friends-black.png?alt=media&token=52756860-e141-4a26-87fb-24b2d34bea89",
-                "color": "black"
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-us-basic-women-black%20.png?alt=media&token=934111ba-214a-4d0b-a4b2-6bbd6f71b3a5",
+                "color": "Black"
             },
             {
                 "background": "EF9090",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Women-PNG-Red.png?alt=media&token=adb10bbc-4d25-4a08-8ee3-e7c1f6ad8c12",
-                "color": "red"
+                "color": "Red"
             },
             {
                 "background": "63A2ED",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Women-PNG-Royal-Blue.png?alt=media&token=4ffb148f-166f-43d3-ad5e-c13868dcc257",
-                "color": "royal blue"
+                "color": "Royal Blue"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Women-PNG-White.png?alt=media&token=05e3e09e-db8a-4227-9edd-e443a1fee5f0",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -419,19 +419,19 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             },
             {
                 "color": "000000",
-                "name": "black"
+                "name": "Black"
             },
             {
                 "color": "22234D",
-                "name": "navy blue"
+                "name": "Navy Blue"
             },
             {
                 "color": "BB213D",
-                "name": "red"
+                "name": "Red"
             }
         ],
         "price": 549,
@@ -459,37 +459,37 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "AMONG US BASIC T-SHIRT MEN",
+        "name": "Amoung us Men",
         "pictures": [
             {
                 "background": "7DA0FB",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Men-PNG-Navy-Blue.png?alt=media&token=ec719d94-88f2-45f5-b32a-438787029740",
-                "color": "navy blue"
+                "color": "Navy Blue"
             },
             {
                 "background": "EF9090",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Men-PNG-Red.png?alt=media&token=37da0930-7110-46f8-b3ac-7994b7f96c67",
-                "color": "red"
+                "color": "Red"
             },
             {
                 "background": "63A2ED",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Men-PNG-Royal-Blue.png?alt=media&token=da85b265-3382-4eac-91ce-02565c065156",
-                "color": "royal blue"
+                "color": "Royal Blue"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Men-PNG-White.png?alt=media&token=52bd95a9-61fc-42fd-ba64-657aa27b243c",
-                "color": "white"
+                "color": "White"
             },
             {
                 "background": "DADADA",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong-Us-Standard-for-Men-PNG-Black.png?alt=media&token=2cf75030-478f-4d1b-a6ed-9c28d27f3079",
-                "color": "black"
+                "color": "Black"
             }
         ],
         "sizes": [
@@ -513,19 +513,19 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             },
             {
                 "color": "000000",
-                "name": "black"
+                "name": "Black"
             },
             {
                 "color": "22234D",
-                "name": "navy blue"
+                "name": "Navy Blue"
             },
             {
                 "color": "BB213D",
-                "name": "red"
+                "name": "Red"
             }
         ],
         "price": 399,
@@ -553,22 +553,22 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "BRIMSTONE – VALORANT T-SHIRT",
+        "name": "Brimstone-Valorant",
         "pictures": [
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FDisplacement-Map_Back.png?alt=media&token=7929d575-668c-4ce2-8200-3ef6e1d9b982",
-                "color": "white"
+                "color": "White"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FDisplacement-Map_Front__2_-removebg-preview.png?alt=media&token=801730df-d7d5-42ba-b7a6-432b24790900",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -596,7 +596,7 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             }
         ],
         "price": 699,
@@ -624,22 +624,22 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "OMEN – VALORANT T-SHIRT",
+        "name": "Omen-Valorant",
         "pictures": [
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FValorant-Omen-PNG-Back-White.png?alt=media&token=975a8f20-bbca-48f5-9520-e50c48a91bc9",
-                "color": "white"
+                "color": "White"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FDisplacement-Map_Front__1_-removebg-preview.png?alt=media&token=026efb38-7b39-43c2-ada6-54cd1d90108c",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -667,7 +667,7 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             }
         ],
         "price": 699,
@@ -695,22 +695,22 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     },
     {
         "store": "Shirtegg",
-        "name": "REYNA – VALORANT T-SHIRT",
+        "name": "Reyna-Valorant",
         "pictures": [
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FValorant-Reyna-PNG-Back-White.png?alt=media&token=1309cfb5-f0e2-4b2f-aed2-e67a14d547b3",
-                "color": "white"
+                "color": "White"
             },
             {
                 "background": "4A4A4A",
                 "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FValorant%2FDisplacement-Map_Front-removebg-preview.png?alt=media&token=b3b05c75-5e13-43d8-8358-c214e9d6b96d",
-                "color": "white"
+                "color": "White"
             }
         ],
         "sizes": [
@@ -738,7 +738,7 @@
         "colors": [
             {
                 "color": "FFFFFF",
-                "name": "white"
+                "name": "White"
             }
         ],
         "price": 699,
@@ -766,7 +766,7 @@
             }
         ],
         "quick_info": [
-            "cotton"
+            "Cotton"
         ]
     }
 ]

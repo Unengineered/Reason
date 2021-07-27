@@ -1,0 +1,246 @@
+[
+    {
+        "store": "Mixtapes",
+        "name": "Your opinions dont matter",
+        "pictures": [
+            {
+                "background": "4A4A4A",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
+                "color": "White"
+            }
+        ],
+        "sizes": [
+            {
+                "unselected": "S",
+                "selected": "Small"
+            },
+            {
+                "unselected": "M",
+                "selected": "Medium"
+            },
+            {
+                "unselected": "L",
+                "selected": "Large"
+            },
+            {
+                "unselected": "XL",
+                "selected": "Extra large"
+            }
+        ],
+        "colors": [
+            {
+                "color": "FFFFFF",
+                "name": "White"
+            }
+        ],
+        "price": 420,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+            {
+                "property": "Fit",
+                "description": "Regular fit"
+            },
+            {
+                "property": "Sleeve length",
+                "description": "Half sleeves"
+            },
+            {
+                "property": "Collar",
+                "description": "Round neck"
+            },
+            {
+                "property": "Occasion",
+                "description": "Casual"
+            },
+            {
+                "property": "Print",
+                "description": "DTG"
+            }
+        ],
+        "quick_info": [
+            "Cotton"
+        ]
+    },
+    {
+        "store": "Mixtapes",
+        "name": "Feelings crop top",
+        "pictures": [
+            {
+                "background": "4A4A4A",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8",
+                "color": "White"
+            }
+        ],
+        "sizes": [
+            {
+                "unselected": "M",
+                "selected": "Medium"
+            },
+            {
+                "unselected": "L",
+                "selected": "Large"
+            }
+        ],
+        "colors": [
+            {
+                "color": "FFFFFF",
+                "name": "White"
+            }
+        ],
+        "price": 300,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+            {
+                "property": "Fit",
+                "description": "Regular fit"
+            },
+            {
+                "property": "Sleeve length",
+                "description": "Half sleeves"
+            },
+            {
+                "property": "Collar",
+                "description": "Round neck"
+            },
+            {
+                "property": "Occasion",
+                "description": "Casual"
+            },
+            {
+                "property": "Print",
+                "description": "DTG"
+            }
+        ],
+        "quick_info": [
+            "Cotton"
+        ]
+    },
+    {
+        "store": "Mixtapes",
+        "name": "B99 Merch",
+        "pictures": [
+            {
+                "background": "7DA0FB",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fcool.png?alt=media&token=408a3084-00cb-481d-9fd8-5f91b6a84076",
+                "color": "Blue"
+            }
+        ],
+        "sizes": [
+            {
+                "unselected": "S",
+                "selected": "Small"
+            },
+            {
+                "unselected": "M",
+                "selected": "Medium"
+            },
+            {
+                "unselected": "L",
+                "selected": "Large"
+            },
+            {
+                "unselected": "XL",
+                "selected": "Extra large"
+            },
+            {
+                "unselected": "XXL",
+                "selected": "Extra extra large"
+            }
+        ],
+        "colors": [
+            {
+                "color": "1D243E",
+                "name": "Blue"
+            }
+        ],
+        "price": 420,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+            {
+                "property": "Fit",
+                "description": "Regular fit"
+            },
+            {
+                "property": "Sleeve length",
+                "description": "Half sleeves"
+            },
+            {
+                "property": "Collar",
+                "description": "Round neck"
+            },
+            {
+                "property": "Occasion",
+                "description": "Casual"
+            },
+            {
+                "property": "Print",
+                "description": "DTG"
+            }
+        ],
+        "quick_info": [
+            "Cotton"
+        ]
+    },
+    {
+        "store": "Mixtapes",
+        "name": "Better together Tshirt",
+        "pictures": [
+            {
+                "background": "DADADA",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fbetter.png?alt=media&token=80285ced-fe89-459c-8849-5015f0eb457a",
+                "color": "Black"
+            }
+        ],
+        "sizes": [
+            {
+                "unselected": "S",
+                "selected": "Small"
+            },
+            {
+                "unselected": "M",
+                "selected": "Medium"
+            },
+            {
+                "unselected": "L",
+                "selected": "Large"
+            },
+            {
+                "unselected": "XL",
+                "selected": "Extra large"
+            }
+        ],
+        "colors": [
+            {
+                "color": "000000",
+                "name": "Black"
+            }
+        ],
+        "price": 420,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+            {
+                "property": "Fit",
+                "description": "Regular fit"
+            },
+            {
+                "property": "Sleeve length",
+                "description": "Half sleeves"
+            },
+            {
+                "property": "Collar",
+                "description": "Round neck"
+            },
+            {
+                "property": "Occasion",
+                "description": "Casual"
+            },
+            {
+                "property": "Print",
+                "description": "DTG"
+            }
+        ],
+        "quick_info": [
+            "Cotton"
+        ]
+    }
+]

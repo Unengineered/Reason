@@ -1,0 +1,136 @@
+[
+    {
+        "store": "Unengineered",
+        "name": "One of one",
+        "pictures": [
+            {
+                "background": "4A4A4A",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402",
+                "color": "White"
+            }
+        ],
+        "sizes": [
+            {
+                "unselected": "S",
+                "selected": "Small"
+            },
+            {
+                "unselected": "M",
+                "selected": "Medium"
+            },
+            {
+                "unselected": "L",
+                "selected": "Large"
+            },
+            {
+                "unselected": "XL",
+                "selected": "Extra large"
+            }
+        ],
+         "colors": [
+            {
+                "color": "FFFFFF",
+                "name": "White"
+            }
+        ],
+        "price": 549,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+            {
+                "property": "Fit",
+                "description": "Regular fit"
+            },
+            {
+                "property": "Sleeve length",
+                "description": "Half sleeves"
+            },
+            {
+                "property": "Collar",
+                "description": "Round neck"
+            },
+            {
+                "property": "Occasion",
+                "description": "Casual"
+            },
+            {
+                "property": "Print",
+                "description": "DTG"
+            }
+        ],
+        "quick_info": [
+            "Cotton"
+        ]
+    },
+    {
+        "store": "Unengineered",
+        "name": "Impossible Tshirt",
+        "pictures": [
+            {
+                "background": "4A4A4A",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2FImpossibleTshirtWhite.png?alt=media&token=fe170b14-2819-4d38-8afc-0e1f6ece6119",
+                "color": "White"
+            },
+            {
+                "background": "DADADA",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2FImpossibleTshirtBlack.png?alt=media&token=07e2e81c-0b3d-4b92-93a8-a06c4d68535f",
+                "color": "Black"
+            }
+        ],
+        "sizes": [
+            {
+                "unselected": "S",
+                "selected": "Small"
+            },
+            {
+                "unselected": "M",
+                "selected": "Medium"
+            },
+            {
+                "unselected": "L",
+                "selected": "Large"
+            },
+            {
+                "unselected": "XL",
+                "selected": "Extra large"
+            }
+        ],
+        "colors": [
+            {
+                "color": "FFFFFF",
+                "name": "White"
+            },
+            {
+                "color": "000000",
+                "name": "Black"
+            }
+        ],
+        "price": 549,
+        "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
+        "properties": [
+            {
+                "property": "Fit",
+                "description": "Regular fit"
+            },
+            {
+                "property": "Sleeve length",
+                "description": "Half sleeves"
+            },
+            {
+                "property": "Collar",
+                "description": "Round neck"
+            },
+            {
+                "property": "Occasion",
+                "description": "Casual"
+            },
+            {
+                "property": "Print",
+                "description": "DTG"
+            }
+        ],
+        "quick_info": [
+            "Cotton"
+        ]
+    }
+   
+]
