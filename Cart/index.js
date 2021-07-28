@@ -17,6 +17,9 @@ const https = require('https').createServer({
 
 const http = require('http').createServer(app)
 
+//database configurations
+require('./configs/mysql.config')
+
 //miiddlewares
 app.use(morgan('dev'))
 app.use(express.json())
