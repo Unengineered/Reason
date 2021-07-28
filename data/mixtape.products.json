@@ -4,9 +4,11 @@
         "name": "Your opinions dont matter",
         "pictures": [
             {
+                "color": "white",
                 "background": "4A4A4A",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
-                "color": "White"
+                "pictures": [
+                    "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9"
+                ]
             }
         ],
         "sizes": [

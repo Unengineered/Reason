@@ -10,20 +10,8 @@
                 "name": "Savage Tshirts",
                 "type": "normal_product",
                 "products": [
-                    {
-                        "name": "Your opinions dont matter",
-                        "price": 420,
-                        "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
-                        "product_id": "60fa5bfcd510c60014e6e4a3",
-                        "background": "4A4A4A"
-                    },
-                    {
-                        "name": "Feelings crop top",
-                        "price": 300,
-                        "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8",
-                        "product_id": "60fa5bfcd510c60014e6e4a4",
-                        "background": "4A4A4A"
-                    }
+                 "60fa5bfcd510c60014e6e4a3",
+                 "60fa5bfcd510c60014e6e4a4"  
                 ]
             },
             {
