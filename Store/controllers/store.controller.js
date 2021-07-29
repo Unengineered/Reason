@@ -1,5 +1,4 @@
 const httpError = require('http-errors')
-const { product } = require('../../Product/controllers/product.controller')
 var sqlClient = require('../configs/mysql.config')
 var { storeSchema } = require('../helpers/validation_schema')
 var Store = require('../models/store.model')

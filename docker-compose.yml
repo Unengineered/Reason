@@ -21,11 +21,22 @@ services:
         restart: always
         environment: 
             - MONGODB_URI=mongodb://mongodb:27017
+            - MYSQL_HOST=mysql_server
+            - MYSQL_PASSWORD=password
+            - MYSQL_USER=admin
+            - MYSQL_DATABASE=everything
+            - MYSQL_PORT=3306
         restart: always
 
     cart:
         build: ./Cart
         restart: always
+        environment: 
+            - MYSQL_HOST=mysql_server
+            - MYSQL_PASSWORD=password
+            - MYSQL_USER=admin
+            - MYSQL_DATABASE=everything
+            - MYSQL_PORT=3306
 
     nginx:
         image: nginx
