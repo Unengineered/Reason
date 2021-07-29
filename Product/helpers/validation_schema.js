@@ -4,7 +4,8 @@ const Joi = require('@hapi/joi')
 const productSchema = Joi.object({
   store: Joi.string().required(),
   name: Joi.string().required(),
-  pictures: Joi.array().required(),
+  thumbnail: Joi.required(),
+  pictures: Joi.required(),
   sizes: Joi.array().required(),
   colors: Joi.array().required(),
   price : Joi.number().required(),

@@ -1,6 +1,7 @@
 const httpError = require('http-errors')
 var { productSchema } = require('../helpers/validation_schema')
 var Product = require('../models/product.model')
+var sqlClient = require('../configs/mysql.config')
 
 module.exports = {
     product: async (req, res, next) => {
@@ -21,7 +22,7 @@ module.exports = {
         }
     },
 
-    allProducts: async(req,res,next) =>{
+    allProductsMongo: async(req,res,next) =>{
         try {
 
             Product.find({}, function(err, products) {
@@ -33,6 +34,29 @@ module.exports = {
             
                 res.send(productMap);  
               });
+
+        } catch (error) {
+            next(error)
+        }
+    },
+
+    allProductsSQL : async (req, res, next) => {
+        try {
+
+            const fetchStoresSQL = 'SELECT * FROM products'
+            // get products list
+            sqlClient.query(fetchStoresSQL, function (error, results, fields) {
+
+                try {
+                    if (error)
+                        throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                    console.log(results)
+                    res.send(results)
+                } catch (error) {
+                    next(error)
+                }
+
+            })
 
         } catch (error) {
             next(error)
@@ -54,6 +78,21 @@ module.exports = {
                     savedProduct = await product.save()
                     savedProductArray.push(savedProduct)
                     console.log(savedProductArray)
+
+                    const addProductSQL = `INSERT INTO products(product_id, price, thumbnail, name, background, store) VALUES('${savedProduct._id}','${savedProduct.price}', '${savedProduct.thumbnail['url']}', '${savedProduct.name}', '${savedProduct.thumbnail['background']}', '${savedProduct.store}');`
+                    // save to mysql
+                    sqlClient.query(addProductSQL, function (error, results, fields) {
+
+                        try {
+                            if (error)
+                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                            console.log(results)
+
+                        } catch (error) {
+                            next(error)
+                        }
+
+                    })
 
                 } catch (error) {
                     throw httpError.BadRequest(error)
@@ -79,6 +118,21 @@ module.exports = {
                 try {
                     await Product.findByIdAndDelete(product)
 
+                    const deleteProductSQL = `DELETE FROM products WHERE product_id='${product}';`
+                    // save to mysql
+                    sqlClient.query(deleteProductSQL, function (error, results, fields) {
+
+                        try {
+                            if (error)
+                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                            console.log(results)
+
+                        } catch (error) {
+                            throw  httpError.BadRequest(error)
+                        }
+
+                    })
+
                 } catch (error) {
                     throw httpError.BadRequest(error)
                 }
@@ -99,7 +153,37 @@ module.exports = {
 
             await productArray.forEach(async (product) => {
                 try {
-                    await Store.findByIdAndUpdate(product.id, product.updatedData)
+                    var savedProduct = await Product.findByIdAndUpdate(product.id, product.updatedData)
+                    console.log(savedProduct)
+                    data = product.updatedData
+                    var setQuery = '';
+                    if(data.price)
+                        setQuery += `price = ${data.price}, `
+                    if(data.thumbnail.url)
+                        setQuery += `thumbnail = '${data.thumbnail.url}', `
+                    if(data.thumbnail.background)
+                        setQuery += `background = '${data.thumbnail.background}', `
+                    if(data.name)
+                        setQuery += `name = '${data.name}', `
+                    if(data.store)
+                        setQuery += `store = '${data.store}', `
+                    
+                    setQuery = setQuery.slice(0, -2)
+                    const updateProductSQL = `UPDATE products SET ${setQuery} WHERE product_id = '${product.id}';`
+                    console.log(updateProductSQL)
+                    // save to mysql
+                    sqlClient.query(updateProductSQL, function (error, results, fields) {
+
+                        try {
+                            if (error)
+                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                            console.log(results)
+
+                        } catch (error) {
+                            throw httpError.BadRequest(error)
+                        }
+
+                    })
                 
                 } catch (error) {
                     throw httpError.BadRequest(error)

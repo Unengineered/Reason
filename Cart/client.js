@@ -11,7 +11,7 @@ const ioOptions = {
 var socketConnection;
 
 // connect two io clients
-socketConnection = io('http://localhost:8080/', ioOptions)
+socketConnection = io('http://ec2-13-233-84-103.ap-south-1.compute.amazonaws.com:8080/', ioOptions)
 
 // console.log('here')
 addToCartData = {

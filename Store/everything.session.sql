@@ -13,3 +13,9 @@ VALUES('1293849','unengineered', 'https://somerandomurl.com');
 
 --@block
 DELETE FROM stores WHERE store_id='60f24e0b75b1dc168c16d626';
+
+--@block
+DROP TABLE stores
+
+--@BLOCK
+SELECT * FROM storess

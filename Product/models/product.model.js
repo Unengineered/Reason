@@ -5,14 +5,11 @@ const productSchema = new Schema({
 
     store: String,
     name: String,
-    pictures: [
-        Schema.Types.Mixed,
-        {
-            background: String,
-            url: String,
-            color: String
-        }
-    ],
+    thumbnail: {
+        url: String,
+        background:String
+    },
+    pictures: Schema.Types.Mixed,
     sizes: [        
         Schema.Types.Mixed,
         {
