@@ -4,31 +4,40 @@ const ioOptions = {
     transports: ['websocket']
     , forceNew: true
     , reconnection: false,
-    // query: {
-    //     fromId: '284979374681227781',
-    // }
+    query: {
+        user_id: '284979374681227781',
+    }
 }
 var socketConnection;
 
 // connect two io clients
-socketConnection = io('http://ec2-13-233-84-103.ap-south-1.compute.amazonaws.com:8080/', ioOptions)
+socketConnection = io('http://localhost:8080/', ioOptions)
 
 // console.log('here')
 addToCartData = {
-    "user_id": "mk4ZxbhAV6Whmse2ExngWeO2dNh2",
-    "product": {
-        "background": "green",
-        "name": "AmongUs merch",
-        "picture": "https://something",
-        "product_id": "sdanjdfn12",
-        "color": "000000",
-        "size" : "L"
-    },
+    "product_id": "61026e0941e3ac31ac94eb1e",
+    "size": "L",
     "quantity": 12,
-    "store_name": "unengineered"
+    "color": "blue",
+    "delivery": 50
 }
 
-socketConnection.emit('addToCart', addToCartData)
-socketConnection.on('response', (res) => {
+updateCartData = {
+    "cart_id": 4,
+    "size": "M",
+    "quantity": 12,
+    "color": "blue",
+}
+
+deleteCart = {
+    "cart_id": 4,
+}
+
+// socketConnection.emit('cart-add', addToCartData)
+// socketConnection.emit('cart-update', updateCartData)
+// socketConnection.emit('cart-delete', deleteCart)
+socketConnection.emit('cart')
+
+socketConnection.on('cart', (res) => {
     console.log(res)
 })

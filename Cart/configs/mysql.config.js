@@ -19,7 +19,7 @@ mysqlConnection.connect((err) => {
 		console.log('connected to mysql')
 });
 
-var addTableSQL = 'CREATE TABLE IF NOT EXISTS carts( cart_id AUTO_INCREMENT PRIMARY KEY, product_id VARCHAR(200) NOT NULL  FOREIGN KEY, user_id VARCHAR(500) NOT NULL, quantity iNT NOT NULL, color, VARCHAR(100), NOT NULL, size VARCHAR(50) NOT NULL);'
+var addTableSQL = 'CREATE TABLE IF NOT EXISTS carts(user_id VARCHAR(500) NOT NULL, product_id VARCHAR(200), cart_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, quantity INT NOT NULL, color VARCHAR(100) NOT NULL, size VARCHAR(50) NOT NULL, delivery INT NOT NULL, CONSTRAINT fk_product FOREIGN KEY (product_id) REFERENCES products(product_id));'
 mysqlConnection.query(addTableSQL, function (error, results, fields) {
 
     try {
