@@ -18,4 +18,7 @@ DELETE FROM stores WHERE store_id='60f24e0b75b1dc168c16d626';
 DROP TABLE stores
 
 --@BLOCK
-SELECT * FROM storess
+SELECT * FROM products
+
+--@block
+SELECT * FROM products WHERE product_id = '61026e0941e3ac31ac94eb1e';
