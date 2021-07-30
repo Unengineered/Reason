@@ -2,6 +2,10 @@
     {
         "store": "Mixtapes",
         "name": "Your opinions dont matter",
+        "thumbnail": {
+            "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
+            "background": "4A4A4A"
+        },
         "pictures": {
             "White": {
                 "background": "4A4A4A",
@@ -65,6 +69,10 @@
     {
         "store": "Mixtapes",
         "name": "Feelings crop top",
+        "thumbnail": {
+            "url":"https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8",
+            "background": "4A4A4A"
+        },
         "pictures": {
             "White": {
                 "background": "4A4A4A",
@@ -120,6 +128,10 @@
     {
         "store": "Shirtegg",
         "name": "Thursday",
+        "thumbnail": {
+            "url":"https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344",
+            "background": "DADADA"
+        },
         "pictures": {
             "Black": {
                 "background": "DADADA",
@@ -193,6 +205,10 @@
     {
         "store": "Unengineered",
         "name": "One of one",
+        "thumbnail": {
+            "url":"https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402",
+            "background": "4A4A4A"
+        },
         "pictures": {
             "White": {
                 "background": "4A4A4A",
