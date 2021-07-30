@@ -20,7 +20,7 @@ const productSchema = new Schema({
     colors: [
         Schema.Types.Mixed,
         {
-            color: String,
+            code: String,
             name: String
         }
     ],

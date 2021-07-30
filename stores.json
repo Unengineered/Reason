@@ -2,8 +2,8 @@
     {
         "name": "Shirtegg",
         "logo": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/logos%2Fshirtegg-logo.png?alt=media&token=5de08152-c54b-4df1-a2e4-06b91d354ea9",
-        "featured_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2Fshirtegg-reyna.png?alt=media&token=32269003-a4b8-486f-9cf7-cb415c4c94b0",
-        "featured_product": "61039b9c84fb2f00161fe536",
+        "banner": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2Fshirtegg-reyna.png?alt=media&token=32269003-a4b8-486f-9cf7-cb415c4c94b0",
+        "banner_product": "6103d63738e2fd00147cb462",
         "store_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/store_pictures%2Fshirtegg.png?alt=media&token=b19e3163-e758-419c-8108-d0d7de1763bd",
         "sections": [
             {
@@ -13,9 +13,9 @@
                     {
                         "name": "Thursday",
                         "price": 549,
-                        "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344",
-                        "product_id": "61039b9c84fb2f00161fe536",
-                        "background": "DADADA"
+                        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344",
+                        "product_id": "6103d63738e2fd00147cb462",
+                        "background_color": "DADADA"
                     }
                 ]
             }
@@ -28,8 +28,8 @@
     {
         "name": "Unengineered",
         "logo": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/logos%2FUnegineered-logoo.png?alt=media&token=5ece6f00-55c9-412f-af54-4e4cf9951b6b",
-        "featured_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2Funengineered_oneofone.png?alt=media&token=27758f5c-50b7-463d-9f6b-7f9c1e6b54ba",
-        "featured_product": "61039b9c84fb2f00161fe537",
+        "banner": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2Funengineered_oneofone.png?alt=media&token=27758f5c-50b7-463d-9f6b-7f9c1e6b54ba",
+        "banner_product": "6103d63738e2fd00147cb463",
         "store_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/store_pictures%2Funengineered_store_picture.png?alt=media&token=55451c37-0277-4c7b-a99a-249a572b051a",
         "sections": [
             {
@@ -39,9 +39,9 @@
                     {
                         "name": "One of one",
                         "price": 549,
-                        "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402",
-                        "product_id": "61039b9c84fb2f00161fe537",
-                        "background": "4A4A4A"
+                        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402",
+                        "product_id": "6103d63738e2fd00147cb463",
+                        "background_color": "4A4A4A"
                     }
                 ]
             }
@@ -54,8 +54,8 @@
     {
         "name": "Mixtape",
         "logo": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/logos%2Fmixtapes.png?alt=media&token=88fe88b6-5e9c-4a96-81a1-95de1fd1f975",
-        "featured_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2FMixtapesBetterTogether.png?alt=media&token=c386e17d-5d1a-43b4-abf5-3f9464a13b7d",
-        "featured_product": "61039b9c84fb2f00161fe535",
+        "banner": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/featured_pictures%2FMixtapesBetterTogether.png?alt=media&token=c386e17d-5d1a-43b4-abf5-3f9464a13b7d",
+        "banner_product": "6103d63738e2fd00147cb461",
         "store_picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/store_pictures%2Fmixtapes_store_picture.png?alt=media&token=3479f23f-eda9-448c-8e43-86ee051e6db7",
         "sections": [
             {
@@ -65,16 +65,16 @@
                     {
                         "name": "Your opinions dont matter",
                         "price": 420,
-                        "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
-                        "product_id": "61039b9c84fb2f00161fe534",
-                        "background": "4A4A4A"
+                        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fopinions.png?alt=media&token=1553487d-e9c3-46a6-bfc7-32b706b7bda9",
+                        "product_id": "6103d63738e2fd00147cb460",
+                        "background_color": "4A4A4A"
                     },
                     {
                         "name": "Feelings crop top",
                         "price": 300,
-                        "picture": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8",
-                        "product_id": "61039b9c84fb2f00161fe535",
-                        "background": "4A4A4A"
+                        "thumbnail": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8",
+                        "product_id": "6103d63738e2fd00147cb461",
+                        "background_color": "4A4A4A"
                     }
                 ]
             }

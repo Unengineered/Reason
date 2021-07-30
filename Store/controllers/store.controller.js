@@ -26,7 +26,7 @@ module.exports = {
             //         // get stores list
             //         sqlClient.query(productDetailSQL, function (error, results, fields) {
             //             if (error)
-            //                 throw httpError.ServiceUnavailable('MySQL error: ' + error)
+            //                 throw httpError.BadRequest('MySQL error: ' + error)
             //             data = {
             //                 name: results[0].name,
             //                 price: results[0].price,
@@ -61,7 +61,7 @@ module.exports = {
 
                 try {
                     if (error)
-                        throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                        throw httpError.BadRequest('MySQL error: ' + error)
                     console.log(results)
                     res.send(results)
                 } catch (error) {
@@ -111,14 +111,14 @@ module.exports = {
                     sqlClient.query(addStoreSQL, function (error, results, fields) {
 
                         if (error)
-                            throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                            throw httpError.BadRequest('MySQL error: ' + error)
                         else {
                             console.log(results)
                         }
 
                     })
                 } catch (error) {
-                    throw httpError.BadRequest(error)
+                    next(error)
                 }
             })
             res.send('added stores successfully')
@@ -145,13 +145,13 @@ module.exports = {
                     sqlClient.query(deleteStoreSQL, function (error, results, fields) {
 
                         if (error)
-                            throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                            throw httpError.BadRequest('MySQL error: ' + error)
                         console.log(results)
 
                     })
 
                 } catch (error) {
-                    throw httpError.BadRequest(error)
+                    next(error)
                 }
 
             });
@@ -187,18 +187,18 @@ module.exports = {
 
                         try {
                             if (error)
-                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                                throw httpError.BadRequest('MySQL error: ' + error)
                             console.log(results)
 
                         } catch (error) {
-                            throw httpError.BadRequest(error)
+                            next(error)
                         }
 
                     })
 
 
                 } catch (error) {
-                    throw httpError.BadRequest(error)
+                    next(error)
                 }
 
             });

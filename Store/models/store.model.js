@@ -5,8 +5,8 @@ const StoreSchema = new Schema({
 
     name: String,
     logo: String,
-    featured_picture: String,
-    featured_product: String,
+    banner: String,
+    banner_product: String,
     store_picture: String,
     sections: [
         Schema.Types.Mixed,
@@ -14,7 +14,14 @@ const StoreSchema = new Schema({
             name: String,
             type: String,
             products: [
-                Schema.Types.Mixed
+                Schema.Types.Mixed,
+                {
+                    name : String,
+                    price : Number,
+                    thumbnail : String,
+                    product_id : String,
+                    background_color: String
+                }
             ]
         }
 
@@ -22,7 +29,8 @@ const StoreSchema = new Schema({
     about: String,
     socials: {
         instagram: String,
-        facebook: String
+        facebook: String,
+        twitter: String
     },
     created_at: {
         type: Date,

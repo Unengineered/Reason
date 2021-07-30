@@ -49,7 +49,7 @@ module.exports = {
 
                 try {
                     if (error)
-                        throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                        throw httpError.BadRequest('MySQL error: ' + error)
                     console.log(results)
                     res.send(results)
                 } catch (error) {
@@ -86,7 +86,7 @@ module.exports = {
 
                         try {
                             if (error)
-                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                                throw httpError.BadRequest('MySQL error: ' + error)
                             console.log(results)
 
                         } catch (error) {
@@ -96,7 +96,7 @@ module.exports = {
                     })
 
                 } catch (error) {
-                    throw httpError.BadRequest(error)
+                    next(error)
                 }
 
             });
@@ -125,17 +125,17 @@ module.exports = {
 
                         try {
                             if (error)
-                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                                throw httpError.BadRequest('MySQL error: ' + error)
                             console.log(results)
 
                         } catch (error) {
-                            throw  httpError.BadRequest(error)
+                            next(error)
                         }
 
                     })
 
                 } catch (error) {
-                    throw httpError.BadRequest(error)
+                    next(error)
                 }
 
             });
@@ -177,17 +177,17 @@ module.exports = {
 
                         try {
                             if (error)
-                                throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                                throw httpError.BadRequest('MySQL error: ' + error)
                             console.log(results)
 
                         } catch (error) {
-                            throw httpError.BadRequest(error)
+                            next(error)
                         }
 
                     })
                 
                 } catch (error) {
-                    throw httpError.BadRequest(error)
+                    next(error)
                 }
 
             });

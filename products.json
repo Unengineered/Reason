@@ -34,7 +34,7 @@
         ],
         "colors": [
             {
-                "color": "FFFFFF",
+                "code": "FFFFFF",
                 "name": "White"
             }
         ],
@@ -93,7 +93,7 @@
         ],
         "colors": [
             {
-                "color": "FFFFFF",
+                "code": "FFFFFF",
                 "name": "White"
             }
         ],
@@ -166,11 +166,11 @@
         ],
         "colors": [
             {
-                "color": "FFFFFF",
+                "code": "FFFFFF",
                 "name": "White"
             },
             {
-                "color": "000000",
+                "code": "000000",
                 "name": "Black"
             }
         ],
@@ -235,7 +235,7 @@
         ],
         "colors": [
             {
-                "color": "FFFFFF",
+                "code": "FFFFFF",
                 "name": "White"
             }
         ],
