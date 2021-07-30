@@ -2,7 +2,7 @@
 CREATE TABLE IF NOT EXISTS carts( 
         user_id VARCHAR(500) NOT NULL,
         product_id VARCHAR(200), 
-        cart_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+        cart_id VARCHAR(100) PRIMARY KEY NOT NULL, 
         quantity INT NOT NULL,
         color VARCHAR(100) NOT NULL,
         size VARCHAR(50) NOT NULL,

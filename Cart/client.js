@@ -15,7 +15,7 @@ socketConnection = io('http://localhost:8080/', ioOptions)
 
 // console.log('here')
 addToCartData = {
-    "product_id": "61039a387b22ab2d6858e086",
+    "product_id": "6103c80b588a8f0015344059",
     "size": "L",
     "quantity": 12,
     "color": "blue",
@@ -39,6 +39,7 @@ socketConnection.emit('cart-add', addToCartData)
 socketConnection.emit('cart')
 
 socketConnection.on('cart', (res) => {
+    // console.log(res[0].products[0])
     console.log(res)
 })
 

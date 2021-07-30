@@ -6,7 +6,8 @@ const fs = require('fs')
 const morgan = require('morgan')
 const sqlClient = require('./configs/mysql.config')
 const httpError = require('http-errors')
-
+const shortid = require('shortid');
+ 
 var app = express();
 const https = require('https').createServer({
     key: fs.readFileSync('./certificates/server.key'),
@@ -22,7 +23,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 app.use(cors())
 
-server = http
+var server = http
 server.listen(port, function () {
     console.log('Server listening at port %d', port);
 });
@@ -72,7 +73,7 @@ io.on('connection', function (socket) {
                             product: {
                                 name: cartItem.name,
                                 backgroundColor: cartItem.background,
-                                thumbnial: cartItem.thumbnail,
+                                thumbnail: cartItem.thumbnail,
                                 price: cartItem.price,
                                 product_id: cartItem.product_id
                             }
@@ -106,7 +107,7 @@ io.on('connection', function (socket) {
         console.log(data)
 
 
-        var addToCartSQL = `INSERT INTO carts(product_id, user_id, quantity, color, size, delivery) VALUES('${data.product_id}', '${user_id}', ${parseInt(data.quantity)}, '${data.color}', '${data.size}', ${parseInt(data.delivery)})`
+        var addToCartSQL = `INSERT INTO carts(product_id, user_id, cart_id, quantity, color, size, delivery) VALUES('${data.product_id}', '${user_id}', '${shortid.generate()}',${parseInt(data.quantity)}, '${data.color}', '${data.size}', ${parseInt(data.delivery)})`
         // save to mysql
         sqlClient.query(addToCartSQL, function (error, results, fields) {
 
@@ -170,7 +171,7 @@ io.on('connection', function (socket) {
 
     socket.on('cart-delete', function (data, acknowledgment) {
 
-        const deleteCartSQL = `DELETE FROM carts WHERE cart_id=${parseInt(data.cart_id)};`
+        const deleteCartSQL = `DELETE FROM carts WHERE cart_id=${data.cart_id};`
         // save to mysql
         sqlClient.query(deleteCartSQL, function (error, results, fields) {
 
