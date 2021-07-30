@@ -66,6 +66,7 @@ module.exports = {
     addProducts: async (req, res, next) => {
 
         try {
+            console.log(req.body)
             const productArray = req.body
             var savedProductArray = []
 

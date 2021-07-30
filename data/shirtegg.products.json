@@ -2,18 +2,20 @@
     {
         "store": "Shirtegg",
         "name": "Thursday",
-        "pictures": [
-            {
+        "pictures": {
+            "Black": {
                 "background": "DADADA",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344",
-                "color": "Black"
+                "url": [
+                    "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344"
+                ]
             },
-            {
+            "White": {
                 "background": "4A4A4A",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-White.png?alt=media&token=ca6ba826-0df3-483e-b306-dffac9f86b7f",
-                "color": "White"
+                "url": [
+                    "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-White.png?alt=media&token=ca6ba826-0df3-483e-b306-dffac9f86b7f"
+                ]
             }
-        ],
+        },
         "sizes": [
             {
                 "unselected": "S",
@@ -32,7 +34,7 @@
                 "selected": "Extra large"
             }
         ],
-         "colors": [
+        "colors": [
             {
                 "color": "FFFFFF",
                 "name": "White"
@@ -165,7 +167,7 @@
                 "selected": "Extra large"
             }
         ],
-         "colors": [
+        "colors": [
             {
                 "color": "FFFFFF",
                 "name": "White"
@@ -214,7 +216,7 @@
             },
             {
                 "background": "DADADA",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong%20us%20X%20friends-black.png?alt=media&token=52756860-e141-4a26-87fb-24b2d34bea89" ,
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FAmong%20Us%2FAmong%20us%20X%20friends-black.png?alt=media&token=52756860-e141-4a26-87fb-24b2d34bea89",
                 "color": "Black"
             },
             {

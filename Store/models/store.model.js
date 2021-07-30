@@ -14,7 +14,7 @@ const StoreSchema = new Schema({
             name: String,
             type: String,
             products: [
-                String
+                Schema.Types.Mixed
             ]
         }
 

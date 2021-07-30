@@ -118,15 +118,22 @@
         ]
     },
     {
-        "store": "Mixtapes",
-        "name": "B99 Merch",
-        "pictures": [
-            {
-                "background": "7DA0FB",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fcool.png?alt=media&token=408a3084-00cb-481d-9fd8-5f91b6a84076",
-                "color": "Blue"
+        "store": "Shirtegg",
+        "name": "Thursday",
+        "pictures": {
+            "Black": {
+                "background": "DADADA",
+                "url": [
+                    "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344"
+                ]
+            },
+            "White": {
+                "background": "4A4A4A",
+                "url": [
+                    "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-White.png?alt=media&token=ca6ba826-0df3-483e-b306-dffac9f86b7f"
+                ]
             }
-        ],
+        },
         "sizes": [
             {
                 "unselected": "S",
@@ -143,19 +150,19 @@
             {
                 "unselected": "XL",
                 "selected": "Extra large"
-            },
-            {
-                "unselected": "XXL",
-                "selected": "Extra extra large"
             }
         ],
         "colors": [
             {
-                "color": "1D243E",
-                "name": "Blue"
+                "color": "FFFFFF",
+                "name": "White"
+            },
+            {
+                "color": "000000",
+                "name": "Black"
             }
         ],
-        "price": 420,
+        "price": 549,
         "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
         "properties": [
             {
@@ -184,15 +191,14 @@
         ]
     },
     {
-        "store": "Mixtapes",
-        "name": "Better together Tshirt",
-        "pictures": [
-            {
-                "background": "DADADA",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Fbetter.png?alt=media&token=80285ced-fe89-459c-8849-5015f0eb457a",
-                "color": "Black"
+        "store": "Unengineered",
+        "name": "One of one",
+        "pictures": {
+            "White": {
+                "background": "4A4A4A",
+                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402"
             }
-        ],
+        },
         "sizes": [
             {
                 "unselected": "S",
@@ -213,11 +219,11 @@
         ],
         "colors": [
             {
-                "color": "000000",
-                "name": "Black"
+                "color": "FFFFFF",
+                "name": "White"
             }
         ],
-        "price": 420,
+        "price": 549,
         "details": "Wash Care: Wash inside out with cold water with similar colors using a gentle cycle, use a mild detergent. Tumble dry low or hang-dry. Do not iron directly or scrub on print, iron inside-out on the lowest setting. Do not bleach.",
         "properties": [
             {

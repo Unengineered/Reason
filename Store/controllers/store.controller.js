@@ -14,36 +14,36 @@ module.exports = {
 
             const store = await Store.findById(store_id)
 
-            // var allProducts = []
-            var sections = store.sections
+            // // var allProducts = []
+            // var sections = store.sections
 
-            sections.forEach(section => {
-                var products = section.products
-                var productsCopy = products
-                products = []
-                productsCopy.forEach(product => {
-                    const productDetailSQL = `SELECT * FROM products WHERE product_id = '${product}'`
-                    // get stores list
-                    sqlClient.query(productDetailSQL, function (error, results, fields) {
-                        if (error)
-                            throw httpError.ServiceUnavailable('MySQL error: ' + error)
-                        data = {
-                            name: results[0].name,
-                            price: results[0].price,
-                            picture: results[0].thumbnail,
-                            background : results[0].background,
-                            product_id : product
-                        }
-                        products.push(data)
-                        console.log(products)
-                    })
-                })
-                console.log(products)
+            // sections.forEach(section => {
+            //     var products = section.products
+            //     var productsCopy = products
+            //     products = []
+            //     productsCopy.forEach(product => {
+            //         const productDetailSQL = `SELECT * FROM products WHERE product_id = '${product}'`
+            //         // get stores list
+            //         sqlClient.query(productDetailSQL, function (error, results, fields) {
+            //             if (error)
+            //                 throw httpError.ServiceUnavailable('MySQL error: ' + error)
+            //             data = {
+            //                 name: results[0].name,
+            //                 price: results[0].price,
+            //                 picture: results[0].thumbnail,
+            //                 background : results[0].background,
+            //                 product_id : product
+            //             }
+            //             products.push(data)
+            //             console.log(products)
+            //         })
+            //     })
+            //     console.log(products)
 
-                section.products = products
-            })
+            //     section.products = products
+            // })
 
-            store.sections = sections
+            // store.sections = sections
             res.send(store)
 
 
