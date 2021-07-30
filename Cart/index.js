@@ -41,55 +41,65 @@ io.on('connection', function (socket) {
     emitCart()
 
     function emitCart() {
-        cartSQL = `SELECT * FROM carts LEFT JOIN products ON carts.product_id=products.product_id WHERE user_id='${socket.handshake.query.user_id}' ORDER BY store ASC`
+        try {
+            cartSQL = `SELECT * FROM carts LEFT JOIN products ON carts.product_id=products.product_id WHERE user_id='${socket.handshake.query.user_id}' ORDER BY store ASC`
 
-        unqieStoreSQL = `SELECT store FROM carts LEFT JOIN products ON carts.product_id=products.product_id GROUP BY store`
-        sqlClient.query(unqieStoreSQL, (err, results, fields) => {
-            var cart = []
+            unqieStoreSQL = `SELECT store FROM carts LEFT JOIN products ON carts.product_id=products.product_id GROUP BY store`
+            sqlClient.query(unqieStoreSQL, (err, results, fields) => {
+                var cart = []
 
-            var data;
-            console.log(results)
-            results.forEach(store => {
-                data = {
-                    store_name: store.store,
-                    products: []
-                }
-                console.log(data)
-                cart.push(data)
-            })
-
-
-            sqlClient.query(cartSQL, (error, results, fields) => {
-
-                results.forEach(cartItem => {
-                    product = {
-                        delivery: cartItem.delivery,
-                        cart_id: cartItem.cart_id,
-                        color: cartItem.color,
-                        size: cartItem.size,
-                        quantity: cartItem.quantity,
-                        product: {
-                            name: cartItem.name,
-                            backgroundColor: cartItem.background,
-                            thumbnial: cartItem.thumbnail,
-                            price: cartItem.price,
-                            product_id: cartItem.product_id
-                        }
+                var data;
+                console.log(results)
+                results.forEach(store => {
+                    data = {
+                        store_name: store.store,
+                        products: []
                     }
-
-                    cart.forEach(item => {
-                        if (item.store_name == cartItem.store) {
-                            item.products.push(product)
-                        }
-                    })
-
+                    console.log(data)
+                    cart.push(data)
                 })
 
-                console.log(cart)
-                socket.emit('cart', cart)
-            })
 
-        })
+                sqlClient.query(cartSQL, (error, results, fields) => {
+
+                    results.forEach(cartItem => {
+                        product = {
+                            delivery: cartItem.delivery,
+                            cart_id: cartItem.cart_id,
+                            color: cartItem.color,
+                            size: cartItem.size,
+                            quantity: cartItem.quantity,
+                            product: {
+                                name: cartItem.name,
+                                backgroundColor: cartItem.background,
+                                thumbnial: cartItem.thumbnail,
+                                price: cartItem.price,
+                                product_id: cartItem.product_id
+                            }
+                        }
+
+                        cart.forEach(item => {
+                            if (item.store_name == cartItem.store) {
+                                item.products.push(product)
+                            }
+                        })
+
+                    })
+
+                    console.log(cart)
+                    socket.emit('cart', cart)
+
+                    if (error) {
+                        throw new Error(error)
+                    }
+                })
+
+            })
+        } catch (error) {
+            console.log(error.message)
+            socket.emit('error', error.message)
+        }
+
     }
     //when client sends a requestś
     socket.on('cart-add', function (data, acknowledgment) {
@@ -101,13 +111,15 @@ io.on('connection', function (socket) {
         sqlClient.query(addToCartSQL, function (error, results, fields) {
 
             try {
-                if (error)
-                    throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                if (error) {
+                    throw new Error(error)
+                }
                 console.log(results)
                 emitCart()
 
             } catch (error) {
-                throw httpError.BadRequest(error)
+                console.log(error.message)
+                socket.emit('error', error.message)
             }
 
         })
@@ -116,33 +128,43 @@ io.on('connection', function (socket) {
     })
 
     socket.on('cart-update', function (data, acknowledgment) {
-        console.log(data)
+        try {
+            console.log(data)
 
-        var setQuery = '';
-        if (data.size)
-            setQuery += `size = '${data.size}', `
-        if (data.quantity)
-            setQuery += `quantity = '${data.quantity}', `
-        if (data.color)
-            setQuery += `color = '${data.color}', `
+            var setQuery = '';
+            if (data.size)
+                setQuery += `size = '${data.size}', `
+            if (data.quantity)
+                setQuery += `quantity = '${data.quantity}', `
+            if (data.color)
+                setQuery += `color = '${data.color}', `
 
-        setQuery = setQuery.slice(0, -2)
-        const updateProductSQL = `UPDATE carts SET ${setQuery} WHERE cart_id = ${data.cart_id};`
-        console.log(updateProductSQL)
-        // save to mysql
-        sqlClient.query(updateProductSQL, function (error, results, fields) {
+            setQuery = setQuery.slice(0, -2)
+            const updateProductSQL = `UPDATE carts SET ${setQuery} WHERE cart_id = ${data.cart_id};`
+            console.log(updateProductSQL)
+            // save to mysql
+            sqlClient.query(updateProductSQL, function (error, results, fields) {
 
-            try {
-                if (error)
-                    throw httpError.ServiceUnavailable('MySQL error: ' + error)
-                console.log(results)
-                emitCart()
+                try {
+                    if (error) {
+                        throw new Error(error)
+                    }
 
-            } catch (error) {
-                throw httpError.BadRequest(error)
-            }
+                    console.log(results)
+                    emitCart()
 
-        })
+                } catch (error) {
+                    console.log(error.message)
+                    socket.emit('error', error.message)
+                }
+
+            })
+
+        } catch (error) {
+            console.log(error.message)
+            socket.emit('error', error.message)
+        }
+
 
     })
 
@@ -154,12 +176,14 @@ io.on('connection', function (socket) {
 
             try {
                 if (error)
-                    throw httpError.ServiceUnavailable('MySQL error: ' + error)
+                    throw new Error(error)
+
                 console.log(results)
                 emitCart()
 
             } catch (error) {
-                throw httpError.BadRequest(error)
+                console.log(error.message)
+                socket.emit('error', error.message)
             }
 
         })
