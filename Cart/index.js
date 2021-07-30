@@ -72,7 +72,7 @@ io.on('connection', function (socket) {
                             quantity: cartItem.quantity,
                             product: {
                                 name: cartItem.name,
-                                backgroundColor: cartItem.background,
+                                background_color: cartItem.background,
                                 thumbnail: cartItem.thumbnail,
                                 price: cartItem.price,
                                 product_id: cartItem.product_id

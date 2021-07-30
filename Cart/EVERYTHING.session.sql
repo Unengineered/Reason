@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS carts(
         product_id VARCHAR(200), 
         cart_id VARCHAR(100) PRIMARY KEY NOT NULL, 
         quantity INT NOT NULL,
-        color VARCHAR(100) NOT NULL,
+        background_color VARCHAR(100) NOT NULL,
         size VARCHAR(50) NOT NULL,
         delivery INT NOT NULL,
         CONSTRAINT fk_product
