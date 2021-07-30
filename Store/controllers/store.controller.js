@@ -7,7 +7,7 @@ module.exports = {
     store: async (req, res, next) => {
         try {
 
-            const store_id = req.query.store_id
+            const store_id = req.params.store_id
 
             if (!store_id)
                 throw httpError.BadRequest('store_id is required')
