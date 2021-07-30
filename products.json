@@ -76,7 +76,7 @@
         "pictures": {
             "White": {
                 "background": "4A4A4A",
-                "url": [
+                "pictures": [
                     "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fmixtapes%2Ffeelings.png?alt=media&token=0c489f56-d6c7-4c7f-abd6-2362e8feb9c8"
                 ]
             }
@@ -135,13 +135,13 @@
         "pictures": {
             "Black": {
                 "background": "DADADA",
-                "url": [
+                "pictures": [
                     "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-Black.png?alt=media&token=7786940a-14f1-4b2f-bbcd-8774f114d344"
                 ]
             },
             "White": {
                 "background": "4A4A4A",
-                "url": [
+                "pictures": [
                     "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Fshirtegg%2FBBT%2FBBT-Anything-Can-Happen-PNG-White.png?alt=media&token=ca6ba826-0df3-483e-b306-dffac9f86b7f"
                 ]
             }
@@ -212,7 +212,7 @@
         "pictures": {
             "White": {
                 "background": "4A4A4A",
-                "url": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402"
+                "pictures": "https://firebasestorage.googleapis.com/v0/b/everything-25.appspot.com/o/products%2Funengineered%2F1of1-white.png?alt=media&token=a69b580e-18b8-40de-9c14-a5b88c27f402"
             }
         },
         "sizes": [

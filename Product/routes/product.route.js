@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const productController = require('../controllers/product.controller')
 
-router.post('/', productController.product)
+router.get('/', productController.product)
 router.post('/addproducts', productController.addProducts)
 router.get('/allProductsMongo', productController.allProductsMongo)
 router.get('/allProductsSQL', productController.allProductsSQL)

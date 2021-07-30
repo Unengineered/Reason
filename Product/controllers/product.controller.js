@@ -7,7 +7,7 @@ module.exports = {
     product: async (req, res, next) => {
         try {
 
-            const product_id = req.body.product_id
+            const product_id = req.query.product_id
 
             if (!product_id)
                 throw httpError.BadRequest('product_id is required')
